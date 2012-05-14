@@ -3,22 +3,22 @@
 CApp::CApp() {
     Surf_Display = NULL;
     bulletRed = NULL;
+	bulletBlue = NULL;
     message = NULL;
     message1 = NULL;
  //   screen = NULL;
     loadedImage = NULL;
-    bulletSpeedRed = false;
+
+	bulletSpeedRed = false;
     bulletSpeedBlue = false;
+	wKey = false;
+	wKeyDown = false;
+	upKey = false;
+	upKeyDown = false;
+
     background = NULL;
     Running = true;
 
+
 }
 
-
-int main(int argc, char* argv[]) {
-
-
-    CApp theApp;
-  //  theApp.OnExecute();
-    return theApp.OnExecute();
-}

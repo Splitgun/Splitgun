@@ -7,8 +7,14 @@
 class CApp {
     private:
         bool    Running;
-        bool   bulletSpeedRed;
+        bool    bulletSpeedRed;
         bool    bulletSpeedBlue;
+		bool	wKey;
+		bool	wKeyDown;
+		bool	upKey;
+		bool    upKeyDown;
+
+
         SDL_Surface* Surf_Display;
         SDL_Surface* message;
         SDL_Surface* message1;
