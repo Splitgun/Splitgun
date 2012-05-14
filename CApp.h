@@ -1,8 +1,8 @@
 #ifndef _CAPP_H_
     #define _CAPP_H_
 
-#include <SDL.h>
-#include <SDL_image.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
 
 class CApp {
     private:
@@ -10,13 +10,19 @@ class CApp {
 
         SDL_Surface* Surf_Display;
         SDL_Surface* message;
+        SDL_Surface* message1;
+        SDL_Surface* bulletRed;
         SDL_Surface* background;
         SDL_Surface* loadedImage;
-        SDL_Surface* screen;
+    //    SDL_Surface* screen;
         SDL_Rect position;
-        SDL_Event keyevent;
+        SDL_Rect position1;
+        SDL_Event keyEvent;
         SDL_Rect rect1;
         SDL_Rect rect2;
+        SDL_Rect rect3;
+        SDL_Rect rect4;
+
         bool keysPressed[332];
 
     public:

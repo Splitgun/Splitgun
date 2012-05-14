@@ -1,19 +1,21 @@
 #include "CApp.h"
 
-void CApp::OnEvent(SDL_Event* Event){ 
+void CApp::OnEvent(SDL_Event* Event){ //This function handles all input events
     if(Event->type == SDL_QUIT){
 
         Running = false;
-    } else  {
+    } else {
 
-      bool isRunning = true;
+    //  bool isRunning = true;
+
+        //The SDL event that we will poll to get events.
 
 
         switch(Event->type)
         {
             case SDL_QUIT:
             {
-                isRunning = false;
+                Running = false;
 
                 break;
             }
