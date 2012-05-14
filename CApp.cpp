@@ -7,8 +7,9 @@ CApp::CApp() {
     message1 = NULL;
  //   screen = NULL;
     loadedImage = NULL;
-
-
+    bulletSpeedRed = false;
+    bulletSpeedBlue = false;
+    background = NULL;
     Running = true;
 
 }
