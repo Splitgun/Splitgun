@@ -1,6 +1,7 @@
 #include "CApp.h"
 
-bool CApp::OnInit() { //This function handles all the loading of data
+bool CApp::OnInit()
+{
 
      if((Surf_Display = SDL_SetVideoMode(820, 600, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL) {
         return false;
@@ -9,24 +10,32 @@ bool CApp::OnInit() { //This function handles all the loading of data
     SDL_WM_SetCaption("Splitgun",NULL);
 
 	background = IMG_Load("finalBackGround.png");
-    message = IMG_Load( "char1.png" ); // da napravq transperent png image
-    message1 = IMG_Load( "char2.png" );
+
+	redPlayer = IMG_Load( "char1.png" );
+    bluePlayer = IMG_Load( "char2.png" );
+
 	bulletRed = IMG_Load("bullet.png");
 	bulletBlue = IMG_Load("bulletBlue.png");
-   //   apply_surface( 0, 0, background, screen );
- //  SDL_BlitSurface(message, &rect1,Surf_Display, &rect2);
 
-	 redBulletPos.x = 820;
-     blueBulletPos.x = 820;
+	blueBar = IMG_Load("blueBar.png");
+	redBar = IMG_Load("redBar.png");
 
-	backRec.x = 0;
-	backRec.y = 0;
-    
-	position.x = 0;
-    position.y = 400;
-    
-	position1.x = 720;
-    position1.y = 400;
+	blueBarPos.x = 820;
+	blueBarPos.y = 200;
+	redBarPos.x = 820;
+	redBarPos.y = 200;
+
+	redBulletPos.x = 820;
+    blueBulletPos.x = 820;
+
+	backgroungRec.x = 0;
+	backgroungRec.y = 0;
+
+	redPlayerPos.x = 0;
+    redPlayerPos.y = 400;
+
+	bluePlayerPos.x = 720;
+    bluePlayerPos.y = 400;
 
     memset(keysPressed, false, sizeof(keysPressed));
 

@@ -10,7 +10,7 @@ int CApp::OnExecute() {
     while(Running) {
         while(SDL_PollEvent(&keyEvent)) {
             OnEvent(&keyEvent);
-     //       CApp::Collision(message,message1);
+
         }
 
         OnLoop();

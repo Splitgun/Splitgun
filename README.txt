@@ -1,0 +1,1 @@
+Open Splitgun.exe in the release folder

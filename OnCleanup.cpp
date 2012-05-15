@@ -1,13 +1,18 @@
 #include "CApp.h"
 
-void CApp::OnCleanup(){ //This function simply cleans up any resources loaded
+void CApp::OnCleanup()
+{
 	SDL_FreeSurface(Surf_Display);
-	SDL_FreeSurface(message);
-	SDL_FreeSurface(message1);
+	SDL_FreeSurface(background);
+
+	SDL_FreeSurface(redPlayer);
+	SDL_FreeSurface(bluePlayer);
+
 	SDL_FreeSurface(bulletRed);
 	SDL_FreeSurface(bulletBlue);
 
-
+	SDL_FreeSurface(blueBar);
+	SDL_FreeSurface(redBar);
 
 	SDL_Quit();
 }

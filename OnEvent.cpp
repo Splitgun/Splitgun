@@ -6,7 +6,7 @@ void CApp::OnEvent(SDL_Event* Event){ //This function handles all input events
         Running = false;
     } else {
 
-    //  bool isRunning = true;
+
 
         //The SDL event that we will poll to get events.
 
@@ -49,7 +49,7 @@ void CApp::OnEvent(SDL_Event* Event){ //This function handles all input events
 
 
 
- //  SDL_BlitSurface(message, &rect1,Surf_Display, &rect2);
+
 
 
 
